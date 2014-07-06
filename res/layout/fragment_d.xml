@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  
+<LinearLayout
+        android:id="@+id/LayoutTop" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+    	
+  <LinearLayout
+      android:id="@+id/LayoutDisplayTCPValues"
+      android:layout_width="335dp"
+      android:layout_height="fill_parent"
+      android:gravity="center"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/txtTitleControl"
+          android:layout_width="fill_parent"
+          android:layout_height="75dp"
+          android:layout_gravity="center"
+          android:textSize="20dp"
+          android:gravity="center"
+          android:text="TCP Values" />
+      
+      <TextView
+          android:id="@+id/txtTCPControlByBtn"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Control by Buttons:" />
+      
+      <TextView
+          android:id="@+id/txtTCPControlByAcc"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Control by Accelerometer:" />
+      
+      <TextView
+          android:id="@+id/txtTCPControlByVoice"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Control by Voice:" />
+      
+      <TextView
+          android:id="@+id/txtTitleAcc"
+          android:layout_width="fill_parent"
+          android:layout_height="75dp"
+          android:textSize="20dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Control by Accelerometer:" />
+      
+       <TextView
+          android:id="@+id/txtTCPAccX"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="AccX:" />
+      
+      <TextView
+          android:id="@+id/txtTCPAccY"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="AccY:" />
+      
+      <TextView
+          android:id="@+id/txtTCPAccZ"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="AccZ:" />
+      
+      <TextView
+          android:id="@+id/txtTitleCmd"
+          android:layout_width="fill_parent"
+          android:layout_height="75dp"
+          android:textSize="20dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Commands Values:" />
+      
+      
+      <TextView
+          android:id="@+id/txtTCPBtnCmd"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Buttons Cmd:" />
+      
+      <TextView
+          android:id="@+id/txtTCPVoiceCmd"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Voice Cmd:" />
+      
+      <TextView
+          android:id="@+id/txtTCPNaoSpeech"
+          android:layout_width="fill_parent"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Nao Speech:" />     
+      
+		        		     
+		    </LinearLayout>
+    	
+    	
+		    
+		    <LinearLayout
+		        android:id="@+id/LayoutEmpty"
+		        android:layout_width="100dp"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+
+		        
+		        
+		    </LinearLayout>
+		    
+		  <LinearLayout 
+		        android:id="@+id/LayoutTCPConnection"
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_weight=".15"
+		        android:gravity="center">
+		       
+		        
+		        		    <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.33"
+					            android:gravity="center"
+					            android:orientation="vertical"
+					            android:text="RED" >
+					            
+							<ImageView
+					            android:id="@+id/imageView1"
+					            android:layout_width="200dp"
+					            android:layout_height="150dp"
+					            android:scaleType="fitXY"
+					            android:src="@drawable/wifi" />
+					            
+						   </LinearLayout>
+						   
+		        		   <LinearLayout
+		        		       android:layout_width="fill_parent"
+		        		       android:layout_height="wrap_content"
+		        		       android:gravity="center_horizontal"
+		        		       android:orientation="horizontal"
+		        		       android:text="RED" >
+					            
+						     <EditText
+							    android:layout_width="200dp" 
+							    android:layout_height="wrap_content" 
+							    android:id="@+id/editip"
+							    android:hint="IP Address"
+							    android:textColor="@android:color/white"
+							    ></EditText>
+						     
+							<EditText
+							    android:layout_width="100dp" 
+							    android:layout_height="wrap_content" 
+							    android:id="@+id/editPort"
+							    android:hint="PORT"
+							    android:textColor="@android:color/white"></EditText>
+					            
+						   </LinearLayout>
+						   
+		        		     <LinearLayout
+		        		         android:layout_width="fill_parent"
+		        		         android:layout_height="wrap_content"
+		        		         android:layout_weight="0.40"
+		        		         android:gravity="center"
+		        		         android:orientation="horizontal" >
+							
+		        		         
+					            
+						     <Button
+								            android:id="@+id/btnConnect"
+								            android:layout_width="150dp"
+								            android:layout_height="wrap_content"
+								            android:text="Connect" />
+						     
+   							 <Button
+								            android:id="@+id/btnValidAddress"
+								            android:layout_width="150dp"
+								            android:layout_height="wrap_content"
+								            android:text="Valid Address" />
+					            
+						   </LinearLayout>
+						   
+		        		    
+		        		   <LinearLayout
+		        		         android:layout_width="fill_parent"
+		        		         android:layout_height="wrap_content"
+		        		         android:layout_weight="0.01"
+		        		         android:gravity="center"
+		        		         android:orientation="horizontal" >
+							
+		        		   <TextView
+						          android:id="@+id/txtTCPIsConnected"
+						          android:layout_width="fill_parent"
+						          android:layout_height="25dp"
+						          android:layout_gravity="center"
+						          android:gravity="center"
+						          android:text="Not Connected" />      
+					            
+
+					            
+						   </LinearLayout> 
+		        
+	
+		        
+		    </LinearLayout>
+		    
+	</LinearLayout>
+		    
+
+</RelativeLayout>

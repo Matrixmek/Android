@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+        android:id="@+id/LayoutTop" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+    	
+  <LinearLayout
+      android:id="@+id/LayoutDisplaySensorValues"
+      android:layout_width="335dp"
+      android:layout_height="fill_parent"
+      android:gravity="center"
+      android:orientation="vertical" >
+		      
+      <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.5"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+							
+		        		 <ImageView
+					            android:id="@+id/imageView1"
+					            android:layout_width="75dp"
+					            android:layout_height="75dp"
+					            android:src="@android:drawable/sym_def_app_icon" />   
+							
+		        		</LinearLayout>
+		        
+		     			  <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.12"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+					                
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal">
+								            
+											<Button
+								            android:id="@+id/btnStartAccelerometer"
+								            android:layout_width="wrap_content"
+								            android:layout_height="wrap_content"
+								            android:text="Control Accelerometer" /> 
+							            
+										</LinearLayout>
+										
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal" >
+								            					                
+
+								         <Button
+								            android:id="@+id/btnStopAccelerometer"
+								            android:layout_width="wrap_content"
+								            android:layout_height="wrap_content"
+								            android:text="Stop Accelerometer" />       
+       
+										</LinearLayout>
+
+							</LinearLayout>
+							
+
+							
+		        <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.12"
+					            android:gravity="center"
+					            android:orientation="horizontal">
+					                
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal" >
+								            
+									    <TextView
+									        android:id="@+id/txtAccX"
+									        android:layout_width="fill_parent"
+									        android:layout_height="fill_parent"
+									        android:gravity="left"
+									        android:text="X"
+									        android:textColor="@android:color/white" >
+									        
+									    </TextView>
+								                
+			
+								            
+										</LinearLayout>
+										
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal">
+								            					                
+									    <TextView 
+									        android:id="@+id/accstatus"
+									        android:text="Accelerometer control"
+									        android:layout_height="fill_parent"
+									        android:layout_width="fill_parent"
+									        android:layout_weight=".14"
+									        android:gravity="center"
+									        android:textColor="@android:color/white">
+									        
+									    </TextView>
+								                
+			
+								            
+										</LinearLayout>
+ 
+							</LinearLayout>
+							
+		        <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.12"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+					                
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal" >
+								            
+									    <TextView
+									        android:id="@+id/txtAccY" 
+									        android:text="Y"
+									        android:layout_height="fill_parent"
+									        android:layout_width="fill_parent"
+									        android:layout_weight=".14"
+									        android:gravity="left"
+									        android:textColor="@android:color/white">
+									        
+									    </TextView>
+      
+										</LinearLayout>
+										
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal" >
+								            					                
+									    <TextView 
+									        android:id="@+id/txtAccONOFF" 
+									        android:text="OFF"
+									        android:layout_height="fill_parent"
+									        android:layout_width="fill_parent"
+									        android:layout_weight=".14"
+									        android:gravity="center"
+									        android:textColor="@android:color/white">
+									        
+									    </TextView>
+								                         
+										</LinearLayout>
+
+							</LinearLayout>
+							
+		        <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.12"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+					                
+								        <LinearLayout
+								            android:layout_width="fill_parent"
+								            android:layout_height="wrap_content"
+								            android:layout_weight="0.12"
+								            android:gravity="center"
+								            android:orientation="horizontal" >
+								            
+									    <TextView
+									        android:id="@+id/txtAccZ" 
+									        android:text="Z"
+									        android:layout_height="fill_parent"
+									        android:layout_width="fill_parent"
+									        android:layout_weight=".14"
+									        android:gravity="left"
+									        android:textColor="@android:color/white">
+									        
+									    </TextView>
+
+										</LinearLayout>
+										
+					            
+							</LinearLayout>
+							
+		        <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.5"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+							
+		        		 <ImageView
+					            android:id="@+id/imageView1"
+					            android:layout_width="75dp"
+					            android:layout_height="75dp"
+					            android:src="@android:drawable/sym_def_app_icon" />   
+							
+		        		</LinearLayout>
+							
+		        <LinearLayout
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:layout_weight="0.12"
+					            android:gravity="center"
+					            android:orientation="horizontal" >
+					                
+								        								            
+									    <TextView
+									        android:id="@+id/txtGyroscope" 
+									        android:text="Gyroscope"
+									        android:layout_height="fill_parent"
+									        android:layout_width="fill_parent"
+									        android:layout_weight=".14"
+									        android:gravity="left"
+									        android:textColor="@android:color/white">
+									        
+									    </TextView>
+
+										
+					            
+							</LinearLayout>
+					      		    
+					    
+		        		     
+		    </LinearLayout>
+    	
+    	
+		    
+		    <LinearLayout
+		        android:id="@+id/LayoutNaoImageView"
+		        android:layout_width="266dp"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="300dp"
+		            android:layout_height="300dp"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/nao" />
+		        
+		    </LinearLayout>
+		    
+		  <LinearLayout 
+		        android:id="@+id/LayoutJoystick"
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_weight=".15"
+		        android:gravity="center">
+		        
+		         <LinearLayout
+		             android:layout_width="match_parent"
+		             android:layout_height="fill_parent"
+		             android:orientation="vertical" >	
+					    
+					<LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="100dp"
+				             android:orientation="vertical" >
+			              
+			               </LinearLayout>	
+
+				    </LinearLayout>
+		        
+		    </LinearLayout>
+		    
+		  </LinearLayout>
+
+</RelativeLayout>

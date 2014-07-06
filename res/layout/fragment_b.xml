@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+        android:id="@+id/LayoutTop" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+    	
+  <LinearLayout
+		      android:id="@+id/LayoutSpeechRecognition"
+		      android:layout_width="wrap_content"
+		      android:layout_height="fill_parent"
+		      android:layout_weight="0.00"
+		      android:gravity="center"
+		      android:orientation="vertical" >
+		        		     
+							
+		        		 <ImageView
+					            android:id="@+id/imageView1"
+					            android:layout_width="75dp"
+					            android:layout_height="75dp"
+					            android:layout_marginTop="20dp"
+					            android:src="@android:drawable/sym_def_app_icon" />   
+							
+		        		     
+					  
+			
+					  <EditText
+					        android:id="@+id/etTextHint"
+					        android:gravity="top"
+					        android:inputType="textMultiLine"
+					        android:lines="1"
+					        android:layout_width="match_parent"
+					        android:layout_height="50dp"
+					        android:text="@string/etSearchHint"/>
+
+					    <Spinner
+					        android:id="@+id/sNoOfMatches"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:entries="@array/saNoOfMatches"
+					        android:prompt="@string/sNoOfMatches"/>
+					
+					    <TextView
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:text="@string/tvTextMatches"
+					        android:textStyle="bold" />
+					
+					    <ListView
+					        android:id="@+id/lvTextMatches"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content" />
+					    
+		 <LinearLayout
+			  android:id="@+id/LayoutActDisSpeechRecognition"
+			  android:layout_width="wrap_content"
+		 	  android:layout_height="wrap_content"
+			  android:gravity="center"
+			  android:orientation="horizontal" >
+   							 
+					 <Button
+					     android:id="@+id/btnActSpeechReco"
+					     android:layout_width="155dp"
+					     android:layout_height="100dp"
+					     android:text="Activate Speech Recognition"
+					     android:textColor="@android:color/white" />
+					     
+					 <Button
+					     android:id="@+id/btnDisSpeechReco"
+					     android:layout_width="167dp"
+					     android:layout_height="75dp"
+					     android:text="Disable Speech Recognition" />
+   							 
+			</LinearLayout>
+					      		    
+					    <LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="40dp"
+							android:layout_weight="0.12"
+							android:gravity="center"
+							android:orientation="horizontal"
+							android:text="RED" >
+								            					                
+									    <TextView
+									        android:id="@+id/txtSpeechControlStatus"
+									        android:text="Speech control:"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:gravity="left"
+									        android:textColor="@android:color/white" >
+									        
+									    </TextView>
+									    
+									   <TextView
+									        android:id="@+id/txtSpeechControlONOFF"
+									        android:text="ON"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:gravity="left"
+									        android:textColor="@android:color/white" >
+									        
+									    </TextView>
+
+										</LinearLayout>
+		        		     
+		    </LinearLayout>
+    	
+    	
+		    
+		    <LinearLayout
+		        android:id="@+id/LayoutNaoImageView"
+		        android:layout_width="266dp"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="300dp"
+		            android:layout_height="300dp"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/nao" />
+		        
+		    </LinearLayout>
+		    
+		  <LinearLayout 
+		        android:id="@+id/LayoutJoystick"
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_weight=".15"
+		        android:gravity="center">
+		        
+		         <LinearLayout
+		             android:layout_width="match_parent"
+		             android:layout_height="fill_parent"
+		             android:orientation="vertical" >
+					 
+				<LinearLayout
+		             android:layout_width="match_parent"
+		             android:layout_height="300dp"
+		             android:orientation="vertical" >
+									    
+					    
+			             <ImageButton
+					        android:id="@+id/btSpeak"
+					        android:layout_width="150dp"
+					        android:layout_height="150dp"
+					        android:layout_alignParentRight="true"
+					        android:layout_centerVertical="true"
+					        android:layout_marginLeft="90dp"
+					        android:layout_marginTop="50dp"
+					        android:src="@drawable/speechicon"
+					        android:scaleType="fitXY"
+					        tools:context=".VoiceRecognitionActivity" />
+					    
+					    </LinearLayout>	
+					    
+					<LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="100dp"
+				             android:orientation="vertical" >
+									    	             
+					    
+			              <Button 
+					        android:id="@+id/btSend"
+					        android:layout_width="150dp"
+					        android:layout_height="75dp"
+					        android:layout_marginLeft="100dp"
+					        android:text="Send" />
+			              
+			               </LinearLayout>	
+
+				    </LinearLayout>
+		        
+		    </LinearLayout>
+		    
+		  </LinearLayout>
+
+    
+</RelativeLayout>
